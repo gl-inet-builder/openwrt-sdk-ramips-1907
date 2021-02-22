@@ -1,0 +1,11 @@
+prefix=/work/work/openwrt190704/gl-image/openwrt-19.07.4.git/staging_dir/host
+exec_prefix=/work/work/openwrt190704/gl-image/openwrt-19.07.4.git/staging_dir/host
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: e2p
+Description: Ext2fs userspace programs utility library
+Version: 1.45.4
+Requires: 
+Cflags: -I${includedir}/e2p -I${includedir}
+Libs: -L${libdir} -le2p
